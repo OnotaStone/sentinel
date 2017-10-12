@@ -1,0 +1,31 @@
+
+  {
+	"Classification": [ {"Key": "Clas1", "Value": "Employee"}, {"Key": "Clas2", "Value": "Manager"} , {"Key": "Clas3", "Value": "Contractor"} ],
+  "Gender":  [  { "Key": "Male" , "Value":  "Male"} , { "Key":"Female" , "Value":  "Female"}],
+  "Title": [  {"Key": "Sal1",  "Value":  "Ms" }, {"Key": "Sal2",  "Value":  "Mrs" }, {"Key": "Sal3",  "Value": "Mr" },  {"Key":"Sal4",  "Value": "Dr" } ],
+  "Product": [
+  {  "Key":"Prod1", "Value":"Elevation Maps" },
+	{"Key":"Prod2",  "Value": "Polls"},
+	{  "Key":"Prod3" ,  "Value":  "CBO Report"},
+	{  "Key":"Prod4" ,  "Value": "Turbo Drones"},
+	{	"Key": "Prod5" ,  "Value": "Weather Analysis"} ,  
+	{"Key":  "Prod6",  "Value": "Tranformative TFC"},
+	{	"Key": "Prod7" , "Value": "TruthFinder" }
+	],
+	
+	  "Department":[ 
+	  { "Key": "Dep1", "Value": "Data Analysis" },
+ { "Key": "Dep2", "Value":  "Ways and Means"}, 
+ {"Key":  "Dep3", "Value":  "Collection"}, 
+{ "Key":  "Dep4", "Value": "Engineering"},
+			  { "Key": "Dep5", "Value": "Marketing" },
+				{ "Key": "Dep6", "Value": "Creative Solutions"} ,
+				{ "Key": "Dep7", "Value": "Sales"} 
+				]
+				
+  
+ 
+				
+  
+  }
+  

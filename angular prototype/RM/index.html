@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="resourceManagementTool">
+
+<head>
+  <meta charset="utf-8">
+  <title>Resource Management Tool</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <script type="text/javascript" src="assets/jslib/angular/angular.min.js"></script>
+  <script type="text/javascript" src="assets/jslib/ui-router/0.2.18/angular-ui-router.min.js"></script>
+
+  <!-- am-chart libraries -->
+  <script type="text/javascript" src="assets/jslib/amcharts/amcharts.js"></script>
+  <script type="text/javascript" src="assets/jslib/amcharts/serial.js"></script>
+  <script type="text/javascript" src="assets/jslib/amcharts/pie.js"></script>
+  <script type="text/javascript" src="assets/jslib/amcharts/amChartsDirective.js"></script>
+  <script type="text/javascript" src="assets/jslib/amcharts/dataloader.min.js"></script>
+  <script type="text/javascript" src="assets/jslib/amcharts/light.js"></script>
+
+  <script src="app/resourceManagentTool.js"></script>
+  <script src="app/config.js"></script>
+  <script src="app/components/report/report.js"></script>
+  <script src="app/components/navigation/navigation.js"></script>
+  <script src="app/services/ResourceService.js"></script>
+  <script src="app/components/employee/employee.js"></script>
+
+  <div class="container">
+    <navigation></navigation>
+    <ui-view></ui-view>
+  </div>
+
+</body>
+
+</html>

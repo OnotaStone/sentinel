@@ -1,0 +1,74 @@
+<div>
+    <form novalidate name="myForm" ng-submit="$ctrl.submit(myForm)">
+        <h4> Sentinel Demo</h4>
+        <div class="containerWrapper">
+            <br/>
+            <div class="customfont">
+
+                <div class="basicContainer">
+
+                    <div class="columnTitle"><select class="selectStyling" ng-options="item as item.Value for item in $ctrl.titleOptions track by item.Key"
+                            name="title" ng-model="$ctrl.title">
+                                           <option value="" disabled selected>Title</option>
+                                           </select>
+                    </div>
+                    <div class="columnTwoName"><input placeholder="Last/Family Name" class="textbox" type="text" name="lastName" ng-model="$ctrl.lastName"
+                            required></div>
+                    <div class="warningMessage" ng-show="myForm.$submitted  && myForm.lastName.$invalid">This Field is Required.</div>
+                </div>
+
+                <div class="basicContainer">
+                    <div class="columnOneName"><input placeholder="First/Given Name" class="textbox" type="text" name="firstName" ng-model="$ctrl.firstName"
+                            required> </div>
+                    <div class="columnMiddelName"> <input placeholder="Middle Name" class="textbox" type="text" name="middleName" ng-model="$ctrl.middleName"></div>
+                    <div class="warningMessage" ng-show="myForm.$submitted && myForm.firstName.$invalid">First/Given Name is Required.</div>
+                </div>
+
+                <br/>
+
+                <div class="basicContainerGender">
+                    <div class="columnOne">Gender</div>
+                    <div class="columnGender">
+
+                        <input id="radio1" type="radio" name="radio" value="1"><label class="labelRadio" for="radio1"><span><span></span></span>Male</label>
+
+
+                        <input id="radio2" type="radio" name="radio" value="2" checked="checked"><label class="labelRadio"
+                            for="radio2"><span><span></span></span>Female</label>
+                    </div>
+                </div>
+                <br/>
+
+                <div class="basicContainer">
+                    <div class="columnOne">Product</div>
+                    <div class="columnTwo"><select name="product" class="selectStyling" ng-options="item as item.Value for item in $ctrl.products track by item.Key"
+                            ng-model="$ctrl.product" required></select>
+                    </div>
+                    <div class="warningMessage" ng-show="myForm.$submitted && myForm.product.$invalid">Product Choice is Required.</div>
+
+
+                </div>
+
+                <div class="basicContainer">
+                    <div class="columnOne">Departments</div>
+                    <div class="columnTwo"><select name="department" class="selectStyling" ng-options="item as item.Value for item in $ctrl.departments track by item.Key"
+                            ng-model="$ctrl.department" required></select>
+                    </div>
+                    <div class="warningMessage" ng-show="myForm.$submitted&& myForm.department.$invalid">Department Choice is Required.</div>
+
+                </div>
+
+                <div class="basicContainerSalary">
+                    <div class="columnOne">Salary (Yearly)</div>
+                    <div class="columnTwo"><input class="textboxSalary" type="text" name="salary" ng-model="$ctrl.salary" ng-pattern="/^[1-9][0-9]*$/"
+                            maxlength="6">
+                    </div>
+                    <div class="warningMessage" ng-show="myForm.salary.$invalid">Please Use Characters [0 - 9]. Zero Can Not be the First Number.</div>
+                </div>
+
+                <div class="submitCenter"><button ng-disabled="myForm.$submitted&&myForm.$invalid" class="shadeButton">Submit</button></div>
+
+            </div>
+        </div>
+    </form>
+</div>

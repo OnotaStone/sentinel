@@ -1,0 +1,226 @@
+
+.chartdiv {
+	width		: 600px;
+	height		: 400px;
+	font-size	: 11px;  
+}										
+
+.amcharts-export-menu-top-right {
+  top: 10px;
+  right: 0;
+}	
+
+.columnOne  {
+  width: 20% ;
+ display: inline-block;
+}
+
+.columnTitle  {
+  width: 12% ;
+ display: inline-block;
+}
+
+.columnTwo {
+  width: 37%;
+  display: inline-block;
+}
+
+
+
+.columnOneName  {
+  width: 35% ;
+  display: inline-block;
+}
+
+.columnMiddelName  {
+  width: 22% ;
+  display: inline-block;
+}
+
+.columnTwoName {
+  width: 45%;
+  display: inline-block;
+}
+
+
+.columnGender  {
+  width: 37%;
+ display: inline-block;
+}
+
+
+
+ 
+
+.basicContainer {
+  display:block;
+  height: 39px;
+}
+
+.basicContainerGender {
+  display:block;
+  height: 54px;
+}
+
+.basicContainerSalary {
+  display:block;
+  height:54px;
+}
+
+
+
+.containerWrapper {
+  display: block;
+}
+
+.submitCenter {
+  width: 40%;
+  margin-left: 4%;
+  margin-right: 30%;
+  text-align:center;
+}
+
+.centerButton{
+
+margin: auto;
+}
+ 
+
+@font-face {
+  font-family: cc;
+  src: url('../fonts/Humanist777CondensedBT.ttf');  
+}  
+
+.customfont { 
+  font-family: cc;
+  font-size: 20px;
+}
+
+
+.textbox {
+    border: 1px solid #cbcbcb;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    padding-left: 10px;
+    -webkit-appearance: none;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+.textboxSalary {
+  border: 1px solid #cbcbcb;
+  border-radius: 8px;
+  outline: none;
+  width: 81%;
+  padding-left: 10px;
+  -webkit-appearance: none;
+  -webkit-user-modify: read-write-plaintext-only;
+} 
+  body{
+  margin      : 0;
+  padding     : 1.5em;
+}
+
+
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width: 1em;
+  height: 1em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 1em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+ vertical-align  : bottom;
+}
+
+
+input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+
+
+input[type=radio]:not(old):checked +  label > span > span{
+  display: block;
+  width: .7em;
+  height: .7em;
+  margin: 0.1em -0.25em -0.75em .1em;
+  border:  0.0625em solid #8b96a0;
+  border-radius: 2em;
+  background: rgb(182	,198	,222);
+  background-image: -moz-linear-gradient(rgb(182,	198	,222),rgb(182,	198	,222));  
+  background-image: -ms-linear-gradient(rgb(182,	198	,222),rgb(182,	198	,222));  
+  background-image: -o-linear-gradient(rgb(182,	198,	222),rgb(182,	198	,222));  
+  background-image: -webkit-linear-gradient(rgb(182,	198,	222),rgb(182,	198	,222));   
+  background-image: linear-gradient(rgb(182,	198,	222),rgb(182,	198	,222));  
+}
+
+
+.selectStyling {
+  
+    border: 1px solid #cbcbcb;
+    border-radius:8px;
+    width: 80%;
+    overflow:hidden;
+}
+ 
+.shadeButton {
+  background: linear-gradient(to bottom, #5d0f10 0, #c5cbde 1%, #b6c6de 4%, #ededea 94%, #d2d2d3 100%);
+  background-repeat: no-repeat;
+  border: #b3b6bd;
+  color: #030b1c;
+  outline-color: #9b9fa8;
+  border-radius: 8px;
+}
+
+.labelRadio {
+  display: inline-block;
+  margin-left: -2em;
+  line-height: 2em;
+}
+
+.navbar-inverse {
+  background-color: #042846 !important;
+  border-color: #042846 !important;
+}
+
+.warningMessage {
+  display: inline-block;
+  font-size: 11pt;
+  color: rgba(224, 149, 13, 0.9);
+}
+
+ 
+
+button[disabled] {
+  background: linear-gradient(to bottom, #042846 0, #f2f2f2 1%, #efefef 4%, #efefef 94%, #b3b6bd 100%);
+  background-repeat: no-repeat;
+  border: #b3b6bd;
+  color: #9b9fa8;
+  outline-color: #9b9fa8;
+  cursor: not-allowed;
+}
